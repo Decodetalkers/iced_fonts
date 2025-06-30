@@ -20,7 +20,7 @@ repository = "https://github.com/Redhawk18/iced_fonts"
 keywords = ["gui", "iced", "fonts"]
 categories = ["gui"]
 readme = "README.md"
-authors = [ "Redhawk18" ]
+authors = ["Redhawk18"]
 
 [features]
 default = []
@@ -34,42 +34,37 @@ nerd = []
 octicons = []
 pomicons = []
 full = [
-    "bootstrap",
-    "codicon",
-    "devicon",
-    "fontawesome",
-    "lucide",
-    "material",
-    "nerd",
-    "octicons",
-    "pomicons",
+	"bootstrap",
+	"codicon",
+	"devicon",
+	"fontawesome",
+	"lucide",
+	"material",
+	"nerd",
+	"octicons",
+	"pomicons",
 ]
 
 [workspace]
 members = ["macros"]
 
 [dev-dependencies]
-iced = "0.14.0-dev"
+iced = { git = "https://github.com/iced-rs/iced.git" }
 
 [dependencies]
-iced_fonts_macros = {path = "macros"}
+iced_fonts_macros = { path = "macros" }
 
 iced_core.workspace = true
 iced_widget.workspace = true
 
 [workspace.dependencies]
-iced_core = "0.14.0-dev" # Iced core has the text widget, which is the only one we need.
-iced_widget = "0.14.0-dev" # TODO 
+iced_core = { git = "https://github.com/iced-rs/iced.git" }
+iced_widget = { git = "https://github.com/iced-rs/iced.git" }
 proc-macro2 = "1"
 quote = "1"
 syn = "2"
 ttf-parser = "0.25"
 
-
-[patch.crates-io]
-iced = { git = "https://github.com/iced-rs/iced.git", rev = "beddf49c" }
-iced_core = { git = "https://github.com/iced-rs/iced.git", rev = "beddf49c" }
-iced_widget = { git = "https://github.com/iced-rs/iced.git", rev = "beddf49c" }
 
 [package.metadata.docs.rs]
 features = ["full"]
