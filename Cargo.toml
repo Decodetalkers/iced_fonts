@@ -56,12 +56,12 @@ members = ["macros"]
 iced = "0.14"
 
 [dependencies]
-iced_fonts_macros = {path = "macros", version = "0.3.0"}
-
+iced_fonts_macros.workspace = true
 iced_core.workspace = true
 iced_widget.workspace = true
 
 [workspace.dependencies]
+iced_fonts_macros = {path = "macros", version = "0.3.0"}
 iced_core = "0.14" # Iced core has the text widget, which is the only one we need.
 iced_widget = "0.14" # TODO remove 
 proc-macro2 = "1"
