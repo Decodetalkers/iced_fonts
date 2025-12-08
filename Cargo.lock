@@ -1182,7 +1182,7 @@ dependencies = [
 
 [[package]]
 name = "iced_fonts"
-version = "0.3.0-dev"
+version = "0.3.0"
 dependencies = [
  "iced",
  "iced_core",
@@ -1192,7 +1192,7 @@ dependencies = [
 
 [[package]]
 name = "iced_fonts_macros"
-version = "0.3.0-dev"
+version = "0.3.0"
 dependencies = [
  "proc-macro2",
  "quote",

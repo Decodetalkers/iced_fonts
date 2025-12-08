@@ -41,7 +41,8 @@ cargo add iced_fonts --features=full
 | `iced` version | `iced_fonts` version |
 | -------------- | ---------------------|
 | 0.13.x         | 0.1.x, 0.2.x         |
-| 0.14.x         | master branch        |
+| 0.14.x         | 0.3.x                |
+| 0.15.x         | master branch        |
 
 ## Fonts
 Fonts can all be enabled with feature flags. All the fonts can be enabled with the `full` feature flag. By default there are no fonts added. 
